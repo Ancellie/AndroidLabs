@@ -3,104 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:paddingTop="24dp">
 
-    <!-- Група для типу товару -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Тип товару:"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp"/>
-
-    <RadioGroup
-        android:id="@+id/productTypeGroup"
+    <FrameLayout
+        android:id="@+id/inputContainer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
-        <RadioButton
-            android:id="@+id/productType1"
-            android:layout_width="145dp"
-            android:layout_height="71dp"
-            android:text="Смартфон" />
-
-        <RadioButton
-            android:id="@+id/productType2"
-            android:layout_width="106dp"
-            android:layout_height="60dp"
-            android:text="Ноутбук" />
-
-        <RadioButton
-            android:id="@+id/productType3"
-            android:layout_width="121dp"
-            android:layout_height="73dp"
-            android:text="Планшет" />
-    </RadioGroup>
-
-    <!-- Група для фірми -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Фірма виробник:"
-        android:textSize="18sp"
-        android:layout_marginBottom="8dp"/>
-
-    <RadioGroup
-        android:id="@+id/manufacturerGroup"
+    <FrameLayout
+        android:id="@+id/resultContainer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp">
-
-        <RadioButton
-            android:id="@+id/manufacturer1"
-            android:layout_width="97dp"
-            android:layout_height="54dp"
-            android:text="Apple" />
-
-        <RadioButton
-            android:id="@+id/manufacturer2"
-            android:layout_width="112dp"
-            android:layout_height="63dp"
-            android:text="Samsung" />
-
-        <RadioButton
-            android:id="@+id/manufacturer3"
-            android:layout_width="100dp"
-            android:layout_height="63dp"
-            android:text="Lenovo" />
-    </RadioGroup>
-
-    <!-- Текстове поле для результату -->
-    <TextView
-        android:id="@+id/resultText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:textSize="16sp"
-        android:minHeight="48dp"/>
-
-    <!-- Кнопки -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/okButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="8dp"
-            android:text="OK"/>
-
-        <Button
-            android:id="@+id/cancelButton"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginStart="8dp"
-            android:text="Cancel"/>
-    </LinearLayout>
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
